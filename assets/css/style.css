@@ -1,7 +1,11 @@
 /*------------------------------------Margins, padding and spacing */
 
 .head-style {
-    padding: 100px;
+    background: url("../images/books.png");
+    max-height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 140px;
 }
 
 .search-bar {
@@ -20,7 +24,9 @@
 
 .main-heading {
     font-size: 80px;
+    color: white;
     text-align: center;
+    text-shadow: 5px 2px black;
 }
 
 .page-bottom {
