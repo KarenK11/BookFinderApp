@@ -6,10 +6,11 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding: 140px;
+    padding-bottom: 200px;
 }
 
 .search-bar {
-    padding-top: 10px;
+    padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 600px;
     padding-right: 50px;
@@ -18,26 +19,39 @@
 
 .nothing-to-see {
     text-align: center;
+    padding-left: 80px;
+    padding-bottom: 30px;
+    font-size: 30px;
 }
 
+.footer-align {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+}
 /*-------------------------------------Styling */
-
-.main-heading {
-    font-size: 80px;
-    color: white;
-    text-align: center;
-    text-shadow: 5px 2px black;
-}
 
 .page-bottom {
     padding-top: 150px;
 }
 
+.book-find {
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 5px black;
+}
+
 /*-------------------------------------Colours */
+
+.head-side {
+    background-color: #F4F6FA;
+}
 
 /*-------------------------------------Footer */
 
 .footer-align {
     text-align: center;
+    background-color: #8094DD;
 }
 
