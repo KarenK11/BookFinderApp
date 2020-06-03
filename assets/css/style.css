@@ -1,0 +1,37 @@
+/*------------------------------------Margins, padding and spacing */
+
+.head-style {
+    padding: 100px;
+}
+
+.search-bar {
+    padding-top: 10px;
+    padding-bottom: 50px;
+    padding-left: 600px;
+    padding-right: 50px;
+    margin-left: 80px;
+}
+
+.nothing-to-see {
+    text-align: center;
+}
+
+/*-------------------------------------Styling */
+
+.main-heading {
+    font-size: 80px;
+    text-align: center;
+}
+
+.page-bottom {
+    padding-top: 150px;
+}
+
+/*-------------------------------------Colours */
+
+/*-------------------------------------Footer */
+
+.footer-align {
+    text-align: center;
+}
+

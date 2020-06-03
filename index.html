@@ -1,44 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Book Finder</title>
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Book Finder</title>
+	<link rel="stylesheet" href="assets/js/main.js" type="text/css">
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		type="text/css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
 		type="text/css">
 </head>
+
 <body>
 
-    <div class="row">
-    <div class="col-sm-4">
-    </div>
+	<section>
+		<div class="row">
+			<div class="col-sm-3">
+			</div>
 
-    <div class="col-sm-4">
-    <header>
-        <h1>Book Finder </h1>
-    </header>
-    </div>
-    <div class="col-sm-4">
-    </div>
-    
-    </div>
+			<div class="col-sm-6">
+				<header class="head-style">
+					<h1 class="main-heading">Book Finder </h1>
+				</header>
+			</div>
+			<div class="col-sm-3">
+			</div>
+		</div>
+	</section>
 
-    <div class="row">
-        <div class="col-sm-4">
-        </div>
-        <div class="col-sm-4">
-        <input type="text" placeholder="Title, author, subject" value>
-        <button id="search-btn">Search</button>
-        </div>
-        <div class="col-sm-4">
-        </div>
-    </div>
+	<section>
+		<div class="row">
+			<div class="col-sm-4">
+			</div>
+			<div class="col-sm-4 search-bar">
+				<input type="text" placeholder="Title, author, subject" value>
+				<button id="search-btn">Search</button>
+			</div>
+			<div class="col-sm-4">
+			</div>
+		</div>
+	</section>
 
-    <footer class="container-fluid footer page-bottom">
+    <section>
+        <div class="row">
+            <div class="col-sm-4">
+			</div>
+            <div id="col-sm-6 books">
+                <p class="nothing-to-see">Nothing to see here...</p>
+            </div>
+            <div class="col-sm-4">
+			</div>
+    </section>
+
+	<footer class="container-fluid footer page-bottom">
 		<div class="row">
 			<div class="col-sm-4 footer-align">
 				<h5 class="uppercase general-sub">Email</h5>
@@ -80,4 +97,5 @@
 		</div>
 	</footer>
 </body>
+
 </html>
