@@ -28,7 +28,24 @@
     padding-top: 30px;
     padding-bottom: 30px;
 }
+
+#books {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
 }
+
+#search-btn {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
 
 /*-------------------------------------Books ID */
 #result {
