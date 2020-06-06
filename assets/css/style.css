@@ -29,6 +29,13 @@
     padding-bottom: 30px;
 }
 }
+
+/*-------------------------------------Books ID */
+#books {
+    max-width: 600px;
+    max-height: 500px;
+}
+
 /*-------------------------------------Styling */
 
 .page-bottom {
