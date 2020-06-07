@@ -47,11 +47,10 @@
 }
 
 
-/*-------------------------------------Books ID */
-#result {
-    max-width: 600px;
-    max-height: 100px;
-}
+/*-------------------------------------Books List ID */
+.book-list {
+    margin-top: 50px;
+    visibility: hidden;
 
 /*-------------------------------------Styling */
 
