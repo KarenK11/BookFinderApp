@@ -25,16 +25,27 @@ $("#search").click(function() {
                 }
 
                 else {
-                    $("title").anitem({"margin-top: 10px"});
-                    $(".book-list").css("visibility: visible");
-                    //displayResult(res);
+                    $("title").anitem({"margin-top:" "5px"}, 1000);
+                    $(".book-list").css("visibility:", "visible");
+                    displayResults(response);
                 }
 
             }
             error: function() {
-                alert("Something went wrong!...");
+                alert("Something went wrong!...<br>"+"Try again!");
             }
-        })
+        });
     }
     $("#search-box").val("");
-})
+});
+
+/*
+function to display results in index.html
+@param res
+*/
+function displayResults(res) {
+    for(var i = 0; i < res.items.length; i+=2) {
+        item = res.items[i];
+        title;
+    }
+}
