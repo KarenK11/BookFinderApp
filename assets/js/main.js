@@ -24,7 +24,17 @@ $("#search").click(function() {
                     alert("No results! Try again.")
                 }
 
+                else {
+                    $("title").anitem({"margin-top: 10px"});
+                    $(".book-list").css("visibility: visible");
+                    //displayResult(res);
+                }
+
+            }
+            error: function() {
+                alert("Something went wrong!...");
             }
         })
     }
+    $("#search-box").val("");
 })
