@@ -1,8 +1,9 @@
 $(document).ready(function() {
     var item, title, author, publisher, bookLink, bookImg;
     var outputList = document.getElementById("list-output");
-    var bookUrl = "https://www.googleapis.com/books/v1/volumes?q="
-    var placeHolder = '<img src="https://via.placeholder.com/150">'
+    var bookUrl = "https://www.googleapis.com/books/v1/volumes?q=";
+    var apiKey = "AIzaSyCtIcvPpkhYk_KB7ityjQls-atqp1X6-Ks";
+    var placeHolder = '<img src="https://via.placeholder.com/150">';
     var searchData; 
 })
 
