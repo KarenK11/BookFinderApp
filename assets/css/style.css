@@ -9,19 +9,16 @@
     padding-bottom: 200px;
 }
 
-.search-bar {
+#search-box {
     padding-top: 50px;
     padding-bottom: 50px;
-    padding-left: 600px;
+    padding-left: 100px;
     padding-right: 50px;
     margin-left: 80px;
 }
 
-.nothing-to-see {
-    text-align: center;
-    padding-left: 80px;
-    padding-bottom: 30px;
-    font-size: 30px;
+.input-group {
+    margin-top: 100px;
 }
 
 .footer-align {
