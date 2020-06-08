@@ -2,7 +2,7 @@ $(document).ready(function() {
     var item, title, author, publisher, bookLink, bookImg;
     var outputList = document.getElementById("list-output");
     var bookUrl = "https://www.googleapis.com/books/v1/volumes?q=";
-    var apiKey = "AIzaSyCtIcvPpkhYk_KB7ityjQls-atqp1X6-Ks";
+    var apiKey = "key=AIzaSyCtIcvPpkhYk_KB7ityjQls-atqp1X6-Ks";
     var placeHolder = '<img src="https://via.placeholder.com/150">';
     var searchData; 
 })
@@ -10,6 +10,7 @@ $(document).ready(function() {
 //listener for Search button
 $("#search").click(function() {
     outputList.innerHTML = ""
+    document.body.style.backgroundImage = "url('')";
     searchData = $("#search-box").val();
     //handling empty search input field
     if(searchData === "" || searchData === null) {
@@ -17,21 +18,19 @@ $("#search").click(function() {
     }
     else {
         $.ajax({
-            url: bookUrl + searchData
+            url: bookUrl + searchData,
             dataType: "json",
-            success: function(res) {
-                console.log(res)
+            success: function(response) {
+                console.log(response)
                 if(response.totalItem === 0) {
                     alert("No results! Try again.")
                 }
-
                 else {
                     $("title").anitem({"margin-top:" "5px"}, 1000);
                     $(".book-list").css("visibility:", "visible");
                     displayResults(response);
                 }
-
-            }
+            },
             error: function() {
                 alert("Something went wrong!...<br>"+"Try again!");
             }
@@ -44,18 +43,19 @@ $("#search").click(function() {
 function to display results in index.html
 @param res
 */
-function displayResults(res) {
-    for(var i = 0; i < res.items.length; i+=2) {
-        item = res.items[i];
+function displayResults(response) {
+    for(var i = 0; i < response.items.length; i+=2) {
+        item = response.items[i];
         title1 = item.VolmueInfo.title;
-        author1 = item.itemVolmueInfo;
+        author1 = item.itemVolmueInfo.authors;
         publisher1 = item.volumeInfo.publisher;
+        bookLink1 = item.volumeInfo.previewLink;
         bookIsbn = item.volumeInfo.industryIdentifiers[1].identifier
         bookImg1 = (item.volumeInfo.imageLinks) ? item.volumeInfo.imageLinks.thumbnail : placeHldr ;
 
     }
 }
- item2 = response.items[i+1];
+        item2 = response.items[i+1];
         title2 = item2.volumeInfo.title;
         author2 = item2.volumeInfo.authors;
         publisher2 = item2.volumeInfo.publisher;
@@ -103,7 +103,7 @@ function displayResults(res) {
 
    //handling error for empty search box
    function displayError() {
-     alert("search term can not be empty!")
+     alert("Search term can't be empty!")
    }
 
 });
