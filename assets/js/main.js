@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 //listener for Search button
 $("#search").click(function() {
-    outputList.innerHTML = ""
+    outputList.innerHTML = "";
     document.body.style.backgroundImage = "url('')";
     searchData = $("#search-box").val();
     //handling empty search input field
@@ -17,12 +17,14 @@ $("#search").click(function() {
         displayError();
     }
     else {
+    // console.log(searchData);
+    // $.get("https://www.googleapis.com/books/v1/volumes?q="+searchData, getBookData()});
         $.ajax({
             url: bookUrl + searchData,
             dataType: "json",
             success: function(response) {
                 console.log(response)
-                if(response.totalItem === 0) {
+                if(response.totalItems === 0) {
                     alert("No results! Try again.")
                 }
                 else {
@@ -47,7 +49,7 @@ function displayResults(response) {
     for(var i = 0; i < response.items.length; i+=2) {
         item = response.items[i];
         title1 = item.VolmueInfo.title;
-        author1 = item.itemVolmueInfo.authors;
+        author1 = item.VolmueInfo.authors;
         publisher1 = item.volumeInfo.publisher;
         bookLink1 = item.volumeInfo.previewLink;
         bookIsbn = item.volumeInfo.industryIdentifiers[1].identifier
