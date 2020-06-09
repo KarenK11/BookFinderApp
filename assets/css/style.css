@@ -45,9 +45,11 @@
 
 
 /*-------------------------------------Books List ID */
+
 .book-list {
     margin-top: 50px;
     visibility: hidden;
+}
 
 /*-------------------------------------Styling */
 
@@ -55,7 +57,7 @@
     padding-top: 150px;
 }
 
-#book-find {
+.book-find {
     font-size: 60px;
     color: white;
     text-align: center;
