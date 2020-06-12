@@ -7,10 +7,11 @@ $(document).ready(function() {
   var searchData;
 
   //listener for search button
-  $("#search").click(function() {
+  $("#search").submit(function() {
     outputList.innerHTML = ""; //empty html output
     document.body.style.backgroundImage = "url('')";
      searchData = $("#search-box").val();
+     console.log(searchData);
      //handling empty search input field
      if(searchData === "" || searchData === null) {
        displayError();
@@ -18,6 +19,8 @@ $(document).ready(function() {
     else {
        // console.log(searchData);
        // $.get("https://www.googleapis.com/books/v1/volumes?q="+searchData, getBookData()});
+      
+       
        $.ajax({
           url: bookUrl + searchData,
           dataType: "json",
@@ -26,6 +29,7 @@ $(document).ready(function() {
             if (response.totalItems === 0) {
               alert("no result!.. try again")
             }
+            
             else {
               $("#title").animate({'margin-top': '5px'}, 1000); //search box animation
               $(".book-list").css("visibility", "visible");
