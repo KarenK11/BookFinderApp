@@ -25,9 +25,9 @@ $(document).ready(function() {
           url: bookUrl + searchData,
           dataType: "json",
           success: function(response) {
-            console.log(response)
+            console.log(response);
             if (response.totalItems === 0) {
-              alert("no result!.. try again")
+              alert("no result!.. try again");
             }
             
             else {
@@ -55,7 +55,7 @@ $(document).ready(function() {
         author1 = item.volumeInfo.authors;
         publisher1 = item.volumeInfo.publisher;
         bookLink1 = item.volumeInfo.previewLink;
-        bookIsbn = item.volumeInfo.industryIdentifiers[1].identifier
+        bookIsbn = item.volumeInfo.industryIdentifiers[1].identifier;
         bookImg1 = (item.volumeInfo.imageLinks) ? item.volumeInfo.imageLinks.thumbnail : placeHldr ;
 
         item2 = response.items[i+1];
@@ -63,7 +63,7 @@ $(document).ready(function() {
         author2 = item2.volumeInfo.authors;
         publisher2 = item2.volumeInfo.publisher;
         bookLink2 = item2.volumeInfo.previewLink;
-        bookIsbn2 = item2.volumeInfo.industryIdentifiers[1].identifier
+        bookIsbn2 = item2.volumeInfo.industryIdentifiers[1].identifier;
         bookImg2 = (item2.volumeInfo.imageLinks) ? item2.volumeInfo.imageLinks.thumbnail : placeHldr ;
 
         // in production code, item.text should have the HTML entities escaped.
@@ -105,7 +105,7 @@ $(document).ready(function() {
 
    //handling error for empty search box
    function displayError() {
-     alert("Search term can't be empty!")
+     alert("Search term can't be empty!");
    }
 
 });
