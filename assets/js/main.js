@@ -17,8 +17,6 @@ $(document).ready(function() {
        displayError();
      }
     else {
-       // console.log(searchData);
-       // $.get("https://www.googleapis.com/books/v1/volumes?q="+searchData, getBookData()});
       
        
        $.ajax({
@@ -81,7 +79,6 @@ $(document).ready(function() {
    * @return htmlCard
    */
    function formatOutput(bookImg, title, author, publisher, bookLink, bookIsbn) {
-     // console.log(title + ""+ author +" "+ publisher +" "+ bookLink+" "+ bookImg)
      var viewUrl = 'book.html?isbn='+bookIsbn; //constructing link for bookviewer
      var htmlCard = `<div class="col-lg-6">
        <div class="card" style="">
