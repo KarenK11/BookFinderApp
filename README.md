@@ -2,7 +2,7 @@ _README INCOMPLETE - TO BE FINISHED_
 
 <h1>BookFinder App</h1>
 
-For my milestone two project as part of the Code Institute's Full stack developer programme, I have built a book searching application, the BookFinder app. The BookFinder app has been built using the Google Books API. The BookFinder app allows you to search Google Books entire catalogue of books. It will also allow you to read any book available via the Google Books API, using the Embedded Viewer API.
+For my milestone two project as part of the Code Institute's Full stack developer programme, I have built a book searching application, the BookFinder app. The BookFinder app has been built using primarily JavaScript, jQuery and the Google Books API. The BookFinder app allows you to search Google Books entire catalogue of books. It will also allow you to read any book available via the Google Books API, using the Embedded Viewer API.
 
 <h2>UX</h2>
 My website is geared towards book lovers and those that love to read. The purpose of my website is two-fold and it can be used for both purposes in tandem, or just one purpose on its own. The first purpose of the app is to give the end user the ability to search for a book based on author, title or subject, utilising the Google Books API search functionality. And the second purpose is to allow the end user to read that book, utlilising the Google Books Embedded Viewer API. 
