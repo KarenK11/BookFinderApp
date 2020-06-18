@@ -1,3 +1,5 @@
+_README TO BE FINISHED_
+
 <h1>BookFinder App</h1>
 
 For my milestone two project as part of the Code Institute's Full stack developer programme, I have built a book searching application, the BookFinder app. The BookFinder app has been built using the Google Books API. The BookFinder app allows you to search Google Books entire catalogue of books. It will also allow you to read any book available via the Google Books API, using the Embedded Viewer API.
@@ -5,9 +7,7 @@ For my milestone two project as part of the Code Institute's Full stack develope
 <h2>UX</h2>
 My website is geared towards book lovers and those that love to read. The purpose of my website is two-fold and it can be used for both purposes in tandem, or just one purpose on its own. The first purpose of the app is to give the end user the ability to search for a book based on author, title or subject, utilising the Google Books API search functionality. And the second purpose is to allow the end user to read that book, utlilising the Google Books Embedded Viewer API. 
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-
-As a person 
+_In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
 
 This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
 
@@ -62,4 +62,4 @@ The text for section Y was copied from the Wikipedia article Z
 Media
 The photos used in this site were obtained from ...
 Acknowledgements
-I received inspiration for this project from X
+I received inspiration for this project from X_
