@@ -20,6 +20,11 @@
     text-align: center;
 }
 
+#search {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 .input-group {
     margin-top: 100px;
 }
