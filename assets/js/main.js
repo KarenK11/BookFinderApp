@@ -8,6 +8,7 @@ $(document).ready(function() {
 
   //listener for search button
   $("#search").submit(function() {
+      debugger;
     outputList.innerHTML = ""; //empty html output
     document.body.style.backgroundImage = "url('')";
      searchData = $("#search-box").val();
