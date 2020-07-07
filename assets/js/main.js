@@ -7,8 +7,7 @@ $(document).ready(function() {
   var searchData;
 
   //listener for search button
-  $("#search").submit(function() {
-      debugger;
+  $("#search").click(function() {
     outputList.innerHTML = ""; //empty html output
     document.body.style.backgroundImage = "url('')";
      searchData = $("#search-box").val();
@@ -55,7 +54,7 @@ $(document).ready(function() {
         author1 = item.volumeInfo.authors;
         publisher1 = item.volumeInfo.publisher;
         bookLink1 = item.volumeInfo.previewLink;
-        bookIsbn = item.volumeInfo.industryIdentifiers[1].identifier;
+        bookIsbn = item.volumeInfo.industryIdentifiers[1].identifier
         bookImg1 = (item.volumeInfo.imageLinks) ? item.volumeInfo.imageLinks.thumbnail : placeHldr ;
 
         item2 = response.items[i+1];
@@ -63,7 +62,7 @@ $(document).ready(function() {
         author2 = item2.volumeInfo.authors;
         publisher2 = item2.volumeInfo.publisher;
         bookLink2 = item2.volumeInfo.previewLink;
-        bookIsbn2 = item2.volumeInfo.industryIdentifiers[1].identifier;
+        bookIsbn2 = item2.volumeInfo.industryIdentifiers[1].identifier
         bookImg2 = (item2.volumeInfo.imageLinks) ? item2.volumeInfo.imageLinks.thumbnail : placeHldr ;
 
         // in production code, item.text should have the HTML entities escaped.
