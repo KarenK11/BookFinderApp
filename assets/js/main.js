@@ -49,7 +49,7 @@ $(document).ready(function() {
    */
    function displayResults(response) {
       for (var i = 0; i < response.items.length; i+=2) {
-        item = response.items[i];
+        item = response.items[i+1];
         title1 = item.volumeInfo.title;
         author1 = item.volumeInfo.authors;
         publisher1 = item.volumeInfo.publisher;
