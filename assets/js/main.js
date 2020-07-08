@@ -68,7 +68,7 @@ $(document).ready(function() {
         // in production code, item.text should have the HTML entities escaped.
         outputList.innerHTML += '<div class="row mt-4">' +
                                 formatOutput(bookImg1, title1, author1, publisher1, bookLink1, bookIsbn) +
-                                /*formatOutput(bookImg2, title2, author2, publisher2, bookLink2, bookIsbn2) +*/
+                                formatOutput(bookImg2, title2, author2, publisher2, bookLink2, bookIsbn2) +
                                 '</div>';
 
         console.log(outputList);
