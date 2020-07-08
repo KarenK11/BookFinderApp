@@ -7,7 +7,7 @@ $(document).ready(function() {
   var searchData;
 
   //listener for search button
-  $("#search").click(function() {
+  $("#search").onclick(function() {
     outputList.innerHTML = ""; //empty html output
     document.body.style.backgroundImage = "url('')";
      searchData = $("#search-box").val();
