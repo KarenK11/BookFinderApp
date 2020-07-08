@@ -54,11 +54,10 @@ $(document).ready(function() {
         author1 = item.volumeInfo.authors;
         publisher1 = item.volumeInfo.publisher;
         bookLink1 = item.volumeInfo.previewLink;
-        console.log(item.volumeInfo)
         bookIsbn = item.volumeInfo.industryIdentifiers[1].identifier
         bookImg1 = (item.volumeInfo.imageLinks) ? item.volumeInfo.imageLinks.thumbnail : placeHldr ;
 
-        item2 = response.items[i+1];
+        item2 = response.items[i];
         title2 = item2.volumeInfo.title;
         author2 = item2.volumeInfo.authors;
         publisher2 = item2.volumeInfo.publisher;
