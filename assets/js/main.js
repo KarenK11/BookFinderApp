@@ -48,7 +48,7 @@ $(document).ready(function() {
    * @param response
    */
    function displayResults(response) {
-      for (var i = 0; i < response.items.length; i+=1) {
+      for (var i = 0; i < response.items.length; i+=2) {
         item = response.items[i];
         title1 = item.volumeInfo.title;
         author1 = item.volumeInfo.authors;
@@ -65,7 +65,7 @@ $(document).ready(function() {
         bookLink2 = item2.volumeInfo.previewLink;
         bookIsbn2 = item2.volumeInfo.industryIdentifiers[1].identifier
         bookImg2 = (item2.volumeInfo.imageLinks) ? item2.volumeInfo.imageLinks.thumbnail : placeHldr ;
-        
+
         // in production code, item.text should have the HTML entities escaped.
         outputList.innerHTML += '<div class="row mt-4">' +
                                 formatOutput(bookImg1, title1, author1, publisher1, bookLink1, bookIsbn) +
