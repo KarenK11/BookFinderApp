@@ -57,7 +57,7 @@ $(document).ready(function() {
         console.log(item.volumeInfo)
         bookIsbn = item.volumeInfo.industryIdentifiers[1].identifier
         bookImg1 = (item.volumeInfo.imageLinks) ? item.volumeInfo.imageLinks.thumbnail : placeHldr ;
-/*
+
         item2 = response.items[i+1];
         title2 = item2.volumeInfo.title;
         author2 = item2.volumeInfo.authors;
@@ -65,7 +65,7 @@ $(document).ready(function() {
         bookLink2 = item2.volumeInfo.previewLink;
         bookIsbn2 = item2.volumeInfo.industryIdentifiers[1].identifier
         bookImg2 = (item2.volumeInfo.imageLinks) ? item2.volumeInfo.imageLinks.thumbnail : placeHldr ;
-*/
+        
         // in production code, item.text should have the HTML entities escaped.
         outputList.innerHTML += '<div class="row mt-4">' +
                                 formatOutput(bookImg1, title1, author1, publisher1, bookLink1, bookIsbn) +
