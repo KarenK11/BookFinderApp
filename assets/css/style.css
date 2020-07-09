@@ -21,6 +21,7 @@
     padding-right: 150px;
     margin-top: 20px;
     text-align: center;
+    display: flex;
 }
 
 #search {
@@ -56,6 +57,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
+    display: flex;
 }
 
 
