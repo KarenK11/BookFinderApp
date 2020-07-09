@@ -17,10 +17,9 @@
 #search-box {
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 130px;
-    padding-right: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
     margin-top: 20px;
-    margin-bottom: 50px;
     text-align: center;
 }
 
@@ -46,25 +45,14 @@
     text-align: center;
 }
 
-.btn-primary {
-    margin-top: 10px;
-    margin-bottom: 15px;
-    margin-left: 10px;
-    margin-right: 100px;
-    padding-left: 150px;
-    padding-right: 150px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-}
 
 #submit {
     margin-top: 10px;
     margin-bottom: 15px;
     margin-left: 10px;
     margin-right: 100px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
