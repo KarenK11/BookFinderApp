@@ -26,11 +26,6 @@
     max-width: 400px;
 }
 
-#search {
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
 .input-group {
     margin-top: 100px;
 }
@@ -48,19 +43,17 @@
     text-align: center;
 }
 
-
 #submit {
     padding-left: 80px;
     padding-right: 80px;
     padding-top: 10px;
     padding-bottom: 10px;
-    text-align: center;
+    text-align: justify;
     display: block;
     margin: 0 auto;
     width: 95%;
     max-width: 400px;
 }
-
 
 /*-------------------------------------Books List ID */
 
