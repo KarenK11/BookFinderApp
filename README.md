@@ -35,21 +35,28 @@ _Features Left to Implement_
 Another feature idea I would like to implement in the future would be a starring/favouriting system, whereby the end user could star their favourite books and refer back to their favourites list at any stage.
 
 <h2>Technologies Used</h2>
+
 HTML: https://html.com/. Used to build the skeleton structure of my application.
+
 CSS: https://developer.mozilla.org/en-US/docs/Web/CSS. Used to style my application.
+
 Bootstrap: https://getbootstrap.com/. Used to make my project responsive and mobile first and to add additional styling.
+
 Font Awesome: https://fontawesome.com/. Used to add icons to my application. 
+
 JQuery: The project uses JQuery to simplify DOM manipulation: https://jquery.com/.
+
 JavaScript: This project uses JavaScript for interactivity. https://www.javascript.com/. 
+
 Google Books API: This project's search functionality is powered by the Google Books API: https://developers.google.com/books.
   
 <h2>Testing</h2>
 I have thoroughly tested my site and can confirm that it works well and will do so for my intended users.
 
-Book Searcher 
+_Book Searcher_
 A prospective book searcher comes on to my application and enters their search query in the search bar, as instructed by the placeholder text. They press the submit button and view their search results.
 
-Book Reader 
+_Book Reader_
 A prospective book reader comes on to my application and enters their search query in the search bar, as instructed by the placeholder text. They press the submit button and view their search results. They choose the book they were looking for and click the "Read More" button. They are brought to a separate page that holds the Google Books Embedded Viewer and from there they can read their book. 
 
 <h2>Deployment</h2>
