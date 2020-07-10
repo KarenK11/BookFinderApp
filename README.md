@@ -51,12 +51,18 @@ JavaScript: This project uses JavaScript for interactivity. https://www.javascri
 Google Books API: This project's search functionality is powered by the Google Books API: https://developers.google.com/books.
   
 <h2>Testing</h2>
-I have thoroughly tested my site and can confirm that it works well and will do so for my intended users.
+I have thoroughly tested my site and can confirm that it works well and will do so for my intended users. The following error displays in the console;
+
+_main.js:57 Uncaught TypeError: Cannot read property 'identifier' of undefined_
+
+It does not interfere with the search results however. 
 
 _Book Searcher_
+
 A prospective book searcher comes on to my application and enters their search query in the search bar, as instructed by the placeholder text. They press the submit button and view their search results.
 
 _Book Reader_
+
 A prospective book reader comes on to my application and enters their search query in the search bar, as instructed by the placeholder text. They press the submit button and view their search results. They choose the book they were looking for and click the "Read More" button. They are brought to a separate page that holds the Google Books Embedded Viewer and from there they can read their book. 
 
 <h2>Deployment</h2>
